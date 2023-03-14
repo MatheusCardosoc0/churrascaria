@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.Glass{
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.Fire{
+  background-image: linear-gradient(to bottom right, red, yellow, orange, red);
+  animation: 3s infinite ease-in fire;
+  transition: all 1s;
+}
+
+@keyframes fire {
+  10%{
+    background-image: linear-gradient(to bottom right, rgb(255, 174, 0), rgb(255, 0, 0), rgb(255, 238, 0), rgb(255, 149, 0))}
+  40%{
+    background-image: linear-gradient(to bottom right, red, yellow, orange, red);
+  }
+  90%{
+    background-image: linear-gradient(to bottom right, rgb(255, 4, 0), rgb(255, 0, 0), rgb(255, 0, 0), rgb(255, 145, 0));
+  }
+}
